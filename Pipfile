@@ -9,6 +9,11 @@ verify_ssl = true
 numpy = "*"
 jupyter = "*"
 pandas = "*"
+matplotlib = "*"
+cython = "*"
+scipy = "*"
+scikit-learn = "*"
+fastfm = {path = "/Users/takumiwatanabe/fastFM"}
 
 [requires]
 python_version = "3.7"
