@@ -173,3 +173,4 @@ dmypy.json
 ml-100k/
 *docx
 .vscode/
+result/
