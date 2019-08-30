@@ -24,12 +24,12 @@ for category_id in category_list:
         except:
             break
     
-    # 1ページあたり20件の結果が返ってくるので、1件ずつ保存する
-    for project in response_json["projects"]:
-        filepath = "result/{}.json".format(project["id"])
-        fp = open(filepath, "w")
-        fp.write(json.dumps(project, sort_keys=True, indent=2))
-        fp.close()
+        # 1ページあたり20件の結果が返ってくるので、1件ずつ保存する
+        for project in response_json["projects"]:
+            filepath = "result/{}.json".format(project["id"])
+            fp = open(filepath, "w")
+            fp.write(json.dumps(project, sort_keys=True, indent=2))
+            fp.close()
     
-    # 1アクセスごとに1秒のウェイトを入れることで、過剰アクセスを防止
-    time.sleep(1)
+        # 1アクセスごとに1秒のウェイトを入れることで、過剰アクセスを防止
+        time.sleep(1)
