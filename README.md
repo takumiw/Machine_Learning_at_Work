@@ -9,8 +9,11 @@
 
 ### 8章 Kickstarterの分析
 * kickstarter_crawler.py
+* kickstarter_json2csv_converter.py
 
 ### 9章 Uplift Modelingによるマーケティング資源の効率化
+* uplift_modeling_sample.ipynb
+* uplift_modeling_practical_problem.ipynb
 
 <br>
 
